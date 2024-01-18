@@ -4,7 +4,7 @@
   height: 75vh;
   background-image: url("../../images/FEND-Coffee-latte-art-3.png");
   background-size: cover;
-  background-position: center; 
+  background-position: top; 
   z-index: 5; 
   filter: grayscale(30%);
 }
@@ -35,16 +35,23 @@
 .hero-nav svg {
   width: 35px;
   height: 35px;
+  margin: 10px; 
 }
 
 .hero-text {
   text-align: center;
 }
 
-h1 {
+.h1-top {
+  display: block;
   font-size: 64px;
   font-weight: 900;
-  margin: 0;
+}
+
+.h1-bottom {
+  display: block; 
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .hero-content button {
