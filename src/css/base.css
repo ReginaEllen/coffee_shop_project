@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  background: grey;
+  background: #FFFFFF;
   font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -20,7 +20,7 @@ main {
   max-width: 1440px;
 
   & div {
-    color: yellow;
+    color: #000000;
 
     @media (min-width: 768px) {
       color: var(--div-color);
