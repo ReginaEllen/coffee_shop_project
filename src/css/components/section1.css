@@ -216,10 +216,23 @@
     width: 82px;
 }
 
+.button-hell:hover {
+    background-color: #737373;
+}
+
+.button-hell:focus {
+    background-color: #737373;
+}
+
 @media(min-width: 767px) {
     .section2_flex_container {
         flex-wrap: nowrap;
+    }   
+    .section2 {
+        background-color: #3A3734;
+        ;
     }
+
 }
 
 /*----*/
@@ -228,6 +241,7 @@
     background-image: url("../../images/FEND-Coffee-bags-2.png");
     width: 100%;
     height: 50vh; 
+    min-height: 330px;
     background-size: cover;
     filter: grayscale(30%);
     display: flex; 
@@ -309,7 +323,6 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-   /* justify-content: space-between;*/
 }
 
 .icon_section4 {
@@ -343,6 +356,21 @@
         font-size: 48px;
     }
 }
+
+.section5 {
+    width: 100%; 
+    height: 33vh;
+}
+
+.section5 h2 {
+    margin: 24px;
+}
+
+.section5 iframe {
+    width: 100%; 
+    height: auto; 
+    background-size: contain;
+} 
 
 
 

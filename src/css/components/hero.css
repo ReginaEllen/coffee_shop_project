@@ -38,6 +38,36 @@
   margin: 10px; 
 }
 
+.menu ul {
+  margin: 20px; 
+}
+
+.menu li {
+  list-style: none;
+  display: inline; 
+  font-weight: 500; 
+  font-size: 18px; 
+  padding: 20px; 
+}
+
+.menu li a {
+  color: #FFF; 
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  font-weight: 900;
+}
+
+.menu li a:focus {
+  font-weight: 900;
+  
+}
+
+.menu li a:active {
+  text-decoration: underline;
+}
+
 .hero-text {
   text-align: center;
 }
@@ -69,3 +99,33 @@
   color: #FFFFFF;
   text-decoration: none;
 }
+
+.button-dark:hover {
+  background-color: #737373;
+  border: #737373; 
+}
+
+.button-dark:focus {
+  background-color: #737373;
+  border: #737373;
+}
+
+@media(min-width: 767px) {
+  .hero{
+    height: 65vh;
+  }
+
+  .menu svg {
+    display: none; 
+  }
+}
+
+@media(max-width: 766px) {
+  .menu ul {
+    display: none; 
+  }
+}
+
+
+
+
