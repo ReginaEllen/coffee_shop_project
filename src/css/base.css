@@ -1,8 +1,17 @@
-body {
-  background: grey;
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  background: #FFFFFF;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
   @media (min-width: 768px) {
-    color: red;
+    color: #000;
   }
 }
 
@@ -11,7 +20,7 @@ main {
   max-width: 1440px;
 
   & div {
-    color: yellow;
+    color: #000000;
 
     @media (min-width: 768px) {
       color: var(--div-color);
