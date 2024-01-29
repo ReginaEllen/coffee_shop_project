@@ -3,7 +3,13 @@
   --div-color: black;
 
   /* Text Styles */
-  --h2-font-size: 26px;
+  --h1-d-font-size: 96px; 
+  --h2-d-font-size: 48px;
+  --h3-d-font-size: 42px; 
+
+  --h1-font-size: 64px;
+  --h2-font-size: 36px; 
+  --h3-m-font-size: 32px;  
 }
 
 /*$color1: #1A1A1A; // black ----Wie zum T. nutzt man dass????*/

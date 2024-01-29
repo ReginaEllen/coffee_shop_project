@@ -33,7 +33,11 @@
 .flex-item {
     width: 185px;
     padding: 20px;  
+}
 
+.flex-item a {
+    color: #fff; 
+    text-decoration: none;
 }
 
 .h3-top {
