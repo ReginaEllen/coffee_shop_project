@@ -1,0 +1,44 @@
+.hero-nav {
+    width: 98%;
+    height: 55px;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .hero-nav svg {
+    width: 35px;
+    height: 35px;
+    margin: 10px; 
+  }
+  
+  .menu ul {
+    margin: 20px; 
+  }
+  
+  .menu li {
+    list-style: none;
+    display: inline; 
+    font-weight: 500; 
+    font-size: 18px; 
+    padding: 20px; 
+  }
+  
+  .menu li a {
+    color: #FFF; 
+    text-decoration: none;
+  }
+  
+  .menu li a:hover {
+    font-weight: 900;
+  }
+  
+  .menu li a:focus {
+    font-weight: 900;
+    
+  }
+  
+  .menu li a:active {
+    text-decoration: underline;
+  }
+  

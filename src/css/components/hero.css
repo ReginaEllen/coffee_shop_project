@@ -8,13 +8,6 @@
   z-index: 5; 
 }
 
-/*linear-gradient(rgba (0, 0, 0, 0.3)), - vor die url, bild als jpg probieren*/
-
-.hero {
-  height: 75vh; 
-
-}
-
 .hero-content {
   position: absolute;
   left: 0;
@@ -119,6 +112,7 @@
 @media(min-width: 767px) {
   .hero{
     height: 65vh;
+    background-position: center;
   }
 
   .menu svg {

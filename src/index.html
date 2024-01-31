@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/components/hero.css">
     <link rel="stylesheet" href="css/components/footer.css">
-    <link rel="stylesheet" href="css/components/section1.css">
+    <link rel="stylesheet" href="css/components/index.css">
     <link href="https://fonts.googleapis.com/css?family=Oregano" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +15,8 @@
   </head>
 
   <body>
-
-    {{> header_home }}
+   
+    {{> header_index }}
 
     <main>
 
@@ -320,13 +320,7 @@
 
       </section>
 
-      <section class="section5">
-        <h2>Komm vorbei</h2>
-        <iframe width="1200px" height="800px" src="https://www.openstreetmap.org/export/embed.html?bbox=10.11920750141144%2C54.34067282155345%2C10.12520492076874%2C54.34288061187882&amp;layer=hot&amp;marker=54.34177673153791%2C10.122206211090088" style="border: none">
-        </iframe>
-        
-       
-      </section>
+      {{> map }}
 
     </main>
 
