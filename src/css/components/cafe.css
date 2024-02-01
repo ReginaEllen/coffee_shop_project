@@ -6,3 +6,138 @@
     background-position: center; 
     z-index: 5; 
 }
+
+.section_c2 {
+    display: flex;
+    justify-content: center;
+    margin: 15% 5%;
+}
+
+.c2_text {
+    width: 100%;
+}
+   
+.c2_text h2 {
+    margin-bottom: 25px;
+}
+
+.c2_text span {
+    display: block;
+}
+
+.section_c3 {
+    width: 100%;
+    height: auto;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%; 
+}
+
+.c3_grid_container {
+    width: 90%;
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto auto auto; 
+    gap: 25px; 
+    overflow: hidden;
+}
+
+.c3_grid_item {
+    position: relative;
+}
+
+.c3_grid_item img {
+    width: 100%; 
+}
+
+#c3_grid_item_1 {
+    grid-area: 1  / 1 / 3 / 2;
+}
+
+#c3_grid_item_2 {
+    grid-area: 1 / 2 / 5 / 3;
+}
+
+#c3_grid_item_3 {
+    grid-area: 3 / 1 / 6 / 2;
+}
+
+#c3_grid_item_4 {
+    grid-area: 5 / 2 / 9 / 3;
+}
+
+#c3_grid_item_5 {
+    grid-area: 6 / 1 / 12 / 2;
+}
+#c3_grid_item_6 {
+    grid-area: 9 / 2 / 14 / 3;
+}
+#c3_grid_item_7 {
+    grid-area: 12 / 1 / 18 / 2;
+}
+#c3_grid_item_8 {
+    grid-area: 14 / 2 / 18 / 3;
+}
+
+@media(min-width: 767px) {
+
+    .section_c2 {
+        margin: 5%;
+    }
+    
+    .c2_text {
+        width: 50%;
+    }
+
+    .c3_grid_container {
+        width: 95%;
+        display: grid; 
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto auto auto; 
+        gap: 10px; 
+    }
+
+    #c3_grid_item_1 {
+        grid-area: 1  / 1 / 2 / 2;
+    }
+    
+    #c3_grid_item_3 {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+    
+    #c3_grid_item_4 {
+        grid-area: 3 / 4 / 4 /5;
+    }
+
+    #c3_grid_item_4 img {
+        position: absolute;
+        bottom: 0;  
+    }
+    
+    #c3_grid_item_5 {
+        grid-area: 2 / 3 / 4 / 4; 
+    }
+
+    #c3_grid_item_5 img {
+        position: absolute;
+        bottom: 0;  
+    }
+
+    #c3_grid_item_6 {
+        grid-area: 1 / 4 / 3 / 5;
+    }
+
+    #c3_grid_item_7 {
+        grid-area: 2 / 1 / 4 / 2;
+    }
+
+    #c3_grid_item_7 img {
+        position: absolute;
+        bottom: 0;  
+    }
+
+    #c3_grid_item_8 {
+        grid-area: 3 / 2 / 4 / 3; 
+    }
+}
