@@ -49,7 +49,45 @@
     margin: 5% 5%;
 }
 
-.section_o2 video {
-    width: 320px; 
-    height: 240px;
+.video {
+    position: relative; 
+    width: 90%;
+    height: auto; 
 }
+
+.video video {
+    width: 100%; 
+}
+
+.video img {
+    position: absolute; 
+    top: 25%; 
+    left: 25%;
+    width: 50%; 
+    height: 50%;
+}
+
+#poly {
+    top: 36%; 
+    left: 38%;
+    width: 28%;
+    height: 28%;
+}
+
+video::-webkit-media-controls-panel{
+    /*display: none;*/
+    width: 100%;
+    height: 3000px;
+}
+
+#play {
+    z-index: -2;
+}
+
+video::-webkit-media-controls-play-button {
+    width: 100%;
+    height: 500%;
+    background-color: brown;
+}
+
+
