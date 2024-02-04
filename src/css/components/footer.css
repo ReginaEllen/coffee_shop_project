@@ -3,9 +3,9 @@
     height: auto; 
     background-color: #1A1A1A; /*color1*/
     color: #fff;
-    font-weight: 400;
+    /*font-weight: 400;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 18px;*/
     padding-bottom: 30px; 
 }
 
@@ -20,7 +20,7 @@
 
 .footer-heading {
     padding-left: 20px;
-    line-height: normal; 
+   /* line-height: normal; */
 }
 
 .footer-flex-container {

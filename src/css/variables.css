@@ -1,15 +1,41 @@
 :root {
   /* Colors */
-  --div-color: black;
+  --div-color: #000;
+  --h1-color: #000;
+  --h2-color: #000;
+  --h3-color: #000;
+  --p-color: #000;
 
   /* Text Styles */
-  --h1-d-font-size: 96px; 
-  --h2-d-font-size: 48px;
-  --h3-d-font-size: 42px; 
+  
+  --h1-size: 64px;
+  --h1-weight: 900;
+  --h1-line-height: 1.1;
+  
+  --h2-size: 36px; 
+  --h2-weight: 900;
+  --h2-line-height: 1.1;
+  
+  --h3-size: 32px;
+  --h3-weight: 900;
+  --h3-line-height: 1.1;
+  
+  --p-size: 14px;
+  --p-weight: 400; 
+  --p-line-height: 1.3;
 
-  --h1-font-size: 64px;
-  --h2-font-size: 36px; 
-  --h3-m-font-size: 32px;  
+  --h1-d-size: 96px;
+  --h2-d-size: 48px;
+  --h3-d-size: 42px;
+  --p-d-size: 18px;
+  
 }
+   
+
+
+    
+ 
+
+
 
 /*$color1: #1A1A1A; // black ----Wie zum T. nutzt man dass????*/

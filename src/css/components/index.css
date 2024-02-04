@@ -7,8 +7,8 @@
     display: flex; 
     justify-content: space-between;
     margin: 40px;
-    font-size: 14px;
-    color: #1f1f1f;
+    /*font-size: 14px;
+    color: #1f1f1f;*/
 }
 
 .container_b_section1 {
@@ -25,19 +25,24 @@
 }
 
 .flex_item_a h2 {
-    margin-bottom: 20px; 
+    margin-bottom: 60px; 
 }
+
+.flex_item_a p {
+    word-wrap: break-word; 
+}
+
 
 .flex_item_b {
     width: 50%;
     display: inline-block;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 .flex_item_c {
     width: 40%;
     display: inline-block;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 .flex_item_d {

@@ -6,6 +6,7 @@ const result = multiply(2, 5);
 
 console.log(result);
 
+
 var playButton = document.getElementById("play");
 
 // Funktion hinzufügen, die beim Klicken auf das play-Element aufgerufen wird
