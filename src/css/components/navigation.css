@@ -80,9 +80,9 @@
   position: absolute; 
   right:25px; 
   top: 10px; 
+  z-index: 5;
  }
 
  #close-button img{
   padding: 10px; 
-  
  }
