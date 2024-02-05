@@ -5,14 +5,14 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url("../../images/FEND-Coffee-latte-art-3.jpg");
   background-size: cover;
   background-position: top; 
-  z-index: 5; 
+ /* z-index: 5; */
 }
 
 .hero-content {
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
+  top: 110px;
   bottom: 0;
   margin: auto;
   color: #FFFFFF;
@@ -20,7 +20,7 @@
   align-items:center;
   justify-content: space-around;
   flex-direction: column;
-  z-index: 10;
+  /*z-index: 10;*/
 }
 
 .hero-nav {
