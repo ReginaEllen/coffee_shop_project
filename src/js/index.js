@@ -7,15 +7,13 @@ const result = multiply(2, 5);
 console.log(result);
 
 
-var playButton = document.getElementById("play");
+var burgermenu = document.getElementById("open"); 
 
-// Funktion hinzufügen, die beim Klicken auf das play-Element aufgerufen wird
-playButton.addEventListener("click", function() {
-    // Das Video-Element abrufen
-    var video = document.getElementById("video").querySelector("video");
-    if (video.paused) {
-        video.play();
-    } else {
-        video.pause();
-    }
+burgermenu.addEventListener("click", function() {
+    var overlay = document.getElementById("overlay");
+    overlay.style.display = "block"
 });
+
+
+
+
