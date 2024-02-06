@@ -16,6 +16,7 @@
     margin: 40px;
     font-size: 14px;
     color: #1f1f1f;
+    flex-direction: row-reverse;
 }
 
 .flex_item_a {
@@ -26,11 +27,6 @@
 .flex_item_a h2 {
     margin-bottom: 60px; 
 }
-
-.flex_item_a p {
-    word-wrap: break-word; 
-}
-
 
 .flex_item_b {
     width: 50%;
@@ -62,7 +58,6 @@
 
 #image2 {
     width: 45%; 
-    float: left;
 }
 
 
