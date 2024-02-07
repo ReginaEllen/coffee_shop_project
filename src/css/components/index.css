@@ -223,6 +223,18 @@
     margin-top: 20px; 
 }
 
+.button-klein:hover {
+    font-weight: 900; 
+}
+
+.button-klein:focus {
+    font-weight: 900;
+}
+
+.button-klein:active {
+    text-decoration: underline;
+}
+
 @media(min-width: 767px) {
         .section3 div {
             width: 40%;
