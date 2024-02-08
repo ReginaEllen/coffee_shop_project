@@ -1,5 +1,14 @@
 :root {
   /* Colors */
+  /*anthrazit: #1A1A1A rgba(26,26,26,1)
+    white: #FFFFFF rgba(255,255,255,1)
+    kraftpapier: #D7BE9D rgba(215,190,157,1)
+    petrol: #006D7E rgba(0,109,126,1)
+    rosa: #EDD1C9 rgba(237,209,201,1)
+    orange: #D77C12 rgba(215,124,18,1)
+    medium grey: #737373 rgba(115,115,115,1)
+    light grey: #E9E9E9 rgba(233,233,233,1) */
+
   --div-color: #000;
   --h1-color: #000;
   --h2-color: #000;

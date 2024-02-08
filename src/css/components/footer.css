@@ -49,6 +49,18 @@
     font-size: 14px;
 }
 
+.flex-item a:hover {
+    font-weight: 900; 
+}
+
+.flex-item a:focus {
+    font-weight: 900; 
+}
+
+.flex-item a:active {
+    text-decoration: underline; 
+}
+
 
 @media(min-width: 768px) {
 
