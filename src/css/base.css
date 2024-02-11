@@ -75,3 +75,11 @@ p {
     line-height: var(--p-line-height);
   }
 }
+
+li {
+  font-size: var(--li-size);
+
+  @media (min-width: 768px) {
+    font-size: var(--li-d-size);
+  }
+}
