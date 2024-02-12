@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustica - Kontakt</title>
+    <link rel="stylesheet" href="../css/components/navigation.css">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/components/contact.css">
+    <link rel="stylesheet" href="../css/components/map.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Oregano" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Permanent+Marker&family=Quattrocento&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    {{> navigation}}   
+
+    <div>
+        <h2>Du hast Fragen?</h2>
+        <h2>Schreib' uns gern!</h2>
+    </div>
+
+    <form action="">
+
+        <label for="name">Name*</label><br>
+        <input type="text" id="name" name="name" value="Name"><br><br>
+
+        <label for="email">E-Mail*</label><br>
+        <input type="email" id="email" name="email" value="E-Mail"><br><br>
+
+        <label for="number">Telefonnummer</label><br>
+        <input type="tel" id="tel" name="tel" value="Telefonnummer"><br><br>
+
+        <label for="">Dein Betreff:</label><br>
+
+        <select name="theme" id="theme">
+        <option value="delivery">Fragen zur Lieferung</option>
+        <option value="product">Fragen zum Produkt</option>
+        <option value="sale">Vertriebsfragen</option>
+        <option value="others">Einfach nur so...</option>
+        </select><br><br>
+
+        <label for="message">Deine Nachricht</label><br>
+
+        <textarea id="message" name="message" rows="4" cols="40">
+        Was hast du auf dem Herzen?
+        </textarea><br><br>
+
+        <input type="checkbox" id="data" name="data" value="data">
+        <label for="data">Ich akzeptiere die Datenschutzerklärung</label><br>
+        
+        <input type="submit" value="abschicken">
+
+    </form>
+
+    {{> footer}}
+    
+</body>
+</html>
