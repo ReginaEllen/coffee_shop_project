@@ -16,45 +16,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Permanent+Marker&family=Quattrocento&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    {{> navigation}}   
+    {{> navigation}}  
+    
+    <main class="contact">
 
-    <div>
-        <h2>Du hast Fragen?</h2>
-        <h2>Schreib' uns gern!</h2>
-    </div>
+        <div>
+            <h2>Du hast Fragen?</h2>
+            <h2>Schreib' uns gern!</h2>
+        </div>
 
-    <form action="">
+        <form action="" method="post">
 
-        <label for="name">Name*</label><br>
-        <input type="text" id="name" name="name" value="Name"><br><br>
+            <label for="name">Name*</label><br>
+            <input type="text" id="name" name="name" placeholder="Name"><br><br>
 
-        <label for="email">E-Mail*</label><br>
-        <input type="email" id="email" name="email" value="E-Mail"><br><br>
+            <label for="email">E-Mail*</label><br>
+            <input type="email" id="email" name="email" placeholder="E-Mail"><br><br>
 
-        <label for="number">Telefonnummer</label><br>
-        <input type="tel" id="tel" name="tel" value="Telefonnummer"><br><br>
+            <label for="tel">Telefonnummer</label><br>
+            <input type="tel" id="tel" name="tel" placeholder="Telefonnummer"><br><br>
 
-        <label for="">Dein Betreff:</label><br>
+            <label for="theme">Dein Betreff</label><br>
 
-        <select name="theme" id="theme">
-        <option value="delivery">Fragen zur Lieferung</option>
-        <option value="product">Fragen zum Produkt</option>
-        <option value="sale">Vertriebsfragen</option>
-        <option value="others">Einfach nur so...</option>
-        </select><br><br>
+            <select name="theme" id="theme">
+            <option value="delivery">Fragen zur Lieferung</option>
+            <option value="product">Fragen zum Produkt</option>
+            <option value="sale">Vertriebsfragen</option>
+            <option value="others">Einfach nur so...</option>
+            </select><br><br>
 
-        <label for="message">Deine Nachricht</label><br>
+            <label for="message">Deine Nachricht</label><br>
 
-        <textarea id="message" name="message" rows="4" cols="40">
-        Was hast du auf dem Herzen?
-        </textarea><br><br>
+            <textarea placeholder="Was hast du auf dem Herzen?" id="message" name="message"></textarea><br><br>
 
-        <input type="checkbox" id="data" name="data" value="data">
-        <label for="data">Ich akzeptiere die Datenschutzerklärung</label><br>
-        
-        <input type="submit" value="abschicken">
+            <div id="checkbox">
+                <input type="checkbox" id="data" name="data" value="data">
+                <label id="data-label" for="data">Ich akzeptiere die Datenschutzerklärung</label><br>
+            </div>
 
-    </form>
+            <input class="button-dark" type="submit" value="abschicken">
+
+        </form>
+
+    </main>
 
     {{> footer}}
     
