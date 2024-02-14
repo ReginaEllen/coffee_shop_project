@@ -17,17 +17,17 @@ input {
     background-color: #E9E9E9; 
 }
 
-#name {
-    
-}
-
-#email {
-    
-}
-
 #tel {
     background-color: rgba(255, 0, 0, 0.3);
 }
+
+#theme {
+    appearance: none;
+  }
+
+#theme option:first-child {
+    display: none;
+  }
 
 #data {
     height: 20px;
