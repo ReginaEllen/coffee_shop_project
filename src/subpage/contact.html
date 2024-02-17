@@ -36,13 +36,17 @@
             <label for="tel">Telefonnummer</label><br>
             <input type="tel" id="tel" name="tel" placeholder="Telefonnummer"><br><br>
 
-            <select id="theme">
-                <option value="">Dein Betreff:</option>
-                <option value="delivery">Fragen zur Lieferung</option>
-                <option value="product">Fragen zum Produkt</option>
-                <option value="sale">Vertriebsfragen</option>
-                <option value="others">Einfach nur so...</option>
-            </select><br><br>
+            <div class="select-container">
+                <select class="select-box" id="dropdown">
+                    <option id="select_label" value="">Dein Betreff:</option>
+                    <option value="delivery">Fragen zur Lieferung</option>
+                    <option value="product">Fragen zum Produkt</option>
+                    <option value="sale">Vertriebsfragen</option>
+                    <option value="others">Einfach nur so...</option>
+                </select>
+                <img class="custom-arrow" id="custom-arrow-down" src="../images/Button hell.png" alt="dropdown-button">
+                <img class="custom-arrow" id="custom-arrow-up" src="../images/Button hell_1.png" alt="dropdown-button">
+            </div><br><br>
 
             <label for="message">Deine Nachricht</label><br>
 
@@ -60,6 +64,9 @@
     </main>
 
     {{> footer}}
-    
+
+   <script src="../js/index.js" type="module"></script> 
+   <script src="../js/select.js" type="module"></script> 
+
 </body>
 </html>

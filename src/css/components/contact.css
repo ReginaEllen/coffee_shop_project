@@ -21,13 +21,54 @@ input {
     background-color: rgba(255, 0, 0, 0.3);
 }
 
-#theme {
-    appearance: none;
-  }
+.select-container {
+    position: relative;
+    margin-top: 10px; 
+}
 
-#theme option:first-child {
+.select-box {
+    width: 100%;
+    height: 44px;
+    border: 2px solid black;
+    border-radius: 5px; 
+    appearance: none;
+    padding-left: 20px;
+    background-color: black;
+    color: #E9E9E9;
+}
+
+.custom-arrow {
+    position: absolute;
+    top: 2px; 
+    right: 2px;
+    width: 38px; 
+    height: 34px; 
+    border-radius: 5px;
+    background-color: black;
+    pointer-events: none;
+}
+
+/*#custom-arrow-down {
+    display: none; 
+}
+
+#custom-arrow-up {
+    display: none; 
+}*/
+
+.select-box option:first-child {
     display: none;
-  }
+}
+
+.select-box option:nth-child(n) {
+    background-color: #E9E9E9;
+    color: black;
+    padding: 20px;
+}
+
+.select-box option:nth-child(n):hover {
+    background-color: gray;
+}
 
 #data {
     height: 20px;
