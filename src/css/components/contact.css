@@ -1,10 +1,20 @@
 .contact {
     width: 90%;
     margin-top: 150px;
+
+    @media (min-width: 768px) {
+        display: flex; 
+        justify-content: space-between;
+    }
 }
 
 form {
     margin: 40px 0 40px 0;
+
+    @media (min-width: 768px) {
+        width: 40%; 
+        margin: 0 40px; 
+    }
 }
 
 input {
@@ -47,14 +57,6 @@ input {
     background-color: black;
     pointer-events: none;
 }
-
-/*#custom-arrow-down {
-    display: none; 
-}
-
-#custom-arrow-up {
-    display: none; 
-}*/
 
 .select-box option:first-child {
     display: none;

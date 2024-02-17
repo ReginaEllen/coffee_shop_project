@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", function() {
     var customArrowUp = document.getElementById("custom-arrow-up");
 
     dropdown.addEventListener("click", function() {
-        if (dropdown.getAttribute("data-open") === "true") {
-            dropdown.setAttribute("data-open", "false");
+        if (dropdown.getAttribute("data-close") === "true") {
+            dropdown.setAttribute("data-close", "false");
             customArrowDown.style.display = "block";
             customArrowUp.style.display = "none";
         } else {
-            dropdown.setAttribute("data-open", "true");
+            dropdown.setAttribute("data-close", "true");
             customArrowDown.style.display = "none";
             customArrowUp.style.display = "block";
         }
