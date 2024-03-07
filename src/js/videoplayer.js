@@ -6,7 +6,10 @@ playButton.addEventListener("click", function() {
     var video = document.getElementById("video").querySelector("video");
     if (video.paused) {
         video.play();
+        playButton.style.display = "none";
     } else {
         video.pause();
+        playButton.style.display = "block";
     }
 });
+

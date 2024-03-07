@@ -1,6 +1,6 @@
 .contact {
     width: 90%;
-    margin-top: 150px;
+    margin-top: 120px;
 
     @media (min-width: 768px) {
         display: flex; 
@@ -14,7 +14,7 @@ form {
 
     @media (min-width: 768px) {
         width: 40%; 
-        margin: 0 40px; 
+        margin: 0 40px 80px 40px; 
     }
 }
 
@@ -26,6 +26,7 @@ input {
     border-left: none; 
     border-right: none;
     background-color: #E9E9E9; 
+    margin-top: 5px;
 }
 
 input:focus {
@@ -70,10 +71,6 @@ input:focus {
     pointer-events: none;
 }
 
-/*#custom-arrow-up {
-    display: none; 
-}*/
-
 .select-box option:first-child {
     display: none;
 }
@@ -84,18 +81,35 @@ input:focus {
 }
 
 #data {
-    height: 20px;
-    width: 20px; 
-    border: 2px; 
-    border-radius: 5px; 
-    display: inline-block; 
+    height: 25px;
+    width: 25px; 
+    border: none; 
+    appearance: none;
+    position: absolute;
+    bottom: 2px; 
+    background-color: white;
+    background-image: url(../../images/default.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#data:checked {
+    background-image: url(../../images/checked.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#data:invalid {
+    background-image: url(../../images/invalid.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #data-label {
     display: inline-block;
     position: absolute;
     bottom: 5px; 
-    left: 30px; 
+    left: 40px; 
 }
 
 #checkbox {
@@ -121,6 +135,7 @@ textarea {
     border-left: none; 
     border-right: none;
     outline: none; 
+    margin-top: 5px;
 }
 
 textarea::placeholder {

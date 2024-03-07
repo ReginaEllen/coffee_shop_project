@@ -70,7 +70,7 @@ video::-webkit-media-controls-panel{
 }
 
 #play {
-    z-index: -2;
+    z-index: 5;
 }
 
 video::-webkit-media-controls-play-button {
