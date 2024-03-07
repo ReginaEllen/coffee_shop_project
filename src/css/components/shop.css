@@ -3,7 +3,7 @@
     width: 100%;
     background-color: #FFF;
     color: #1a1a1a; 
-    padding: 40px;
+    padding: 20px;
 }
 
 .section2 h2 {
@@ -29,9 +29,9 @@
 
 .coffee {
     color: #FFF;
-    width: 40%;
+    width: 48%;
     height: auto;
-    margin: 5px;
+    margin: 2px;
     padding-bottom: 20px; 
 }
 
