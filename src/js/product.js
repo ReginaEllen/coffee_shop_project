@@ -1,16 +1,16 @@
 import { fetchProducts } from "./productHelpers";
-/*import productImgPath from "../images/FEND_Coffee_Costa-Rica 1.png";*/
+import productImgPath from "../images/FEND_Coffee_Costa-Rica 1.png";
 import { getProductId } from "./productHelpers";
 
 const product = async () => {
   const productData = await fetchProducts();
   const productId = getProductId();
 
- /* const product = productData.find(
+  const product = productData.find(
     (singleProduct) => singleProduct.id === parseInt(productId)
-  );*/
+  );
 
-  /*const productHtml = `
+  const productHtml = `
       <div class=coffee>
         <div class="product">
           <img src="${productImgPath}" alt="product image">
@@ -25,7 +25,7 @@ const product = async () => {
   `;
 
   const productContainer = document.querySelector(".product-container");
-  productContainer.innerHTML = productHtml;*/
+  productContainer.innerHTML = productHtml;
 };
 
 product();

@@ -55,9 +55,14 @@ a {
     margin-bottom: 15px;
 }
 
-/*@media(min-width: 767px) {
+@media(min-width: 767px) {
     .product-container {
-        flex-wrap: nowrap;
-    }   
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 40px;
+    }
+
+    .shop h2 {
+        margin-left: 40px;
+    }
     
-}*/
+}
