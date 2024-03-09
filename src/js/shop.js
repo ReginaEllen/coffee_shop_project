@@ -7,7 +7,7 @@ const buildProductHtml = async () => {
   return productData.map(
     (product) => `
     <div class="products">
-      <a href="/product/index.html?id=${product.id}" class="product">
+      <a href="product.html?id=${product.id}" class="product">
         <div class="product-box">
         <img src="${productImgPath}" alt="product image">
         </div>
