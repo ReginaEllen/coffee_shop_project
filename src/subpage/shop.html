@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustica | Shop</title>
+    <link rel="stylesheet" href="../css/components/navigation.css">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/components/shop.css">
+    <link rel="stylesheet" href="../css/components/map.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Oregano" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Permanent+Marker&family=Quattrocento&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <header class="shop"> 
+        {{> navigation}}   
+    </header>
+
+    <main class="shop">
+
+        <div class="shop_title">
+          <h2>Entdecke unsere Kaffee Sorten</h2>
+        </div>   
+
+        <div class="product-container"></div>
+
+    </main>
+
+    {{> map }}
+    {{> footer }}
+
+    <script src="../js/index.js" type="module"></script>
+    <script src="../js/shop.js" type="module"></script>
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustica - Café</title>
+    <link rel="stylesheet" href="../css/components/navigation.css">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/components/index.css">
+    <link rel="stylesheet" href="../css/components/cafe.css">
+    <link rel="stylesheet" href="../css/components/map.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Oregano" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Permanent+Marker&family=Quattrocento&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   
+    <header class="cafe"> 
+    {{> navigation}}   
+    </header>
+
+    <main>
+
+        <section class="section1">
+          <div class="container_a_section1">
+  
+            <div>
+  
+              <div class="flex_item_a">
+              <h2>Rösterei & Café</h2>
+              <p>Kaffee aus Kiel, direkt gehandelt und geröstet 
+                in der eigenen Rösterei, serviert im gemütlichen Café 
+                in der Innenstadt.</p>
+              </div>
+  
+              <div class="flex_item_b">
+              <p>Komm uns besuchen!</p>
+              <p> Fraunhoferstr. 13, Kiel</p>
+              </div>
+  
+              <div class="flex_item_c">
+              <p>Mo - Fr 8-18 Uhr</p>
+              <p> Sa 11-18 Uhr</p>
+              </div>
+  
+            </div>
+  
+            <img id="image1" src="../images/FEND-Coffee-machine-2.jpg" alt="professionelle Kaffeemaschine">
+  
+          </div>
+        </section>
+
+        <section class="section_c2">
+            <div class="c2_text">
+                <h2><span>Frisches Gebäck</span><span>von nebenan</span></h2>
+                <p>Als es die ersten Hügel des Kursivgebirges erklommen hatte, 
+                  warf es einen letzten Blick zurück auf die Skyline seiner 
+                  Heimatstadt Buchstabhausen, die Headline von Alphabetdorf. 
+                  Wehmütig lief ihm eine rhetorische Frage über die Wange, dann 
+                  setzte es seinen Weg fort. Unterwegs traf es eine Copy. Die 
+                  Copy warnte das Blindtextchen, da, wo sie herkäme wäre sie 
+                  zigmal umgeschrieben worden und alles, was von ihrem Ursprung 
+                  noch übrig wäre, sei das Wort "und" und das Blindtextchen 
+                  solle umkehren und wieder in sein eigenes, sicheres Land 
+                  zurückkehren.</p>
+            </div>
+        </section>
+
+        <section class="section_c3">
+            <div class="c3_grid_container">
+                <div class="c3_grid_item" id="c3_grid_item_1"> <img src="../images/FEND-danish 1.jpg" alt=""></div>
+                <div class="c3_grid_item" id="c3_grid_item_2"> <img src="../images/FEND-Coffee-latte-art-2.jpg" alt=""></div>
+                <div class="c3_grid_item" id="c3_grid_item_3"> <img src="../images/FEND-coffee-machine.jpg" alt=""></div>
+                <div class="c3_grid_item" id="c3_grid_item_4"> <img src="../images/FEND-coffee-breakfast 1.jpg" alt=""></div>
+                <div class="c3_grid_item" id="c3_grid_item_5"> <img src="../images/FEND-Coffee-latte-art.jpg" alt=""></div>
+                <div class="c3_grid_item" id="c3_grid_item_6"> <img src="../images/FEND-coffee-list.jpg" alt=""></div>
+                <div class="c3_grid_item" id="c3_grid_item_7"> <img src="../images/FEND-Coffee-sign.jpg" alt=""></div>
+                <div class="c3_grid_item" id="c3_grid_item_8"> <img src="../images/FEND-Coffee-latte-art-3.jpg" alt=""></div>
+                
+               
+                
+            </div>
+        </section>
+  
+    </main>
+   
+    {{> map }}
+    {{> footer }}
+
+    <script src="../js/index.js" type="module"></script>
+</body>
+</html>

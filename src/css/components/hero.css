@@ -5,29 +5,20 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url("../../images/FEND-Coffee-latte-art-3.jpg");
   background-size: cover;
   background-position: top; 
-  z-index: 5; 
-}
-
-/*linear-gradient(rgba (0, 0, 0, 0.3)), - vor die url, bild als jpg probieren*/
-
-.hero {
-  height: 75vh; 
-
 }
 
 .hero-content {
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
+  top: 110px;
   bottom: 0;
   margin: auto;
   color: #FFFFFF;
   display: flex; 
   align-items:center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
-  z-index: 10;
 }
 
 .hero-nav {
@@ -41,11 +32,11 @@
 .hero-nav svg {
   width: 35px;
   height: 35px;
-  margin: 10px; 
+  margin: 15px; 
 }
 
 .menu ul {
-  margin: 20px; 
+  margin: 20px 0; 
 }
 
 .menu li {
@@ -74,24 +65,8 @@
   text-decoration: underline;
 }
 
-.hero-text {
+.hero-text { 
   text-align: center;
-}
-
-.h1-top {
-  display: block;
-  font-size: 64px;
-  font-weight: 900;
-}
-
-.h1-bottom {
-  display: block; 
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.hero-content button {
- margin-bottom: 15%;
 }
 
 .button-dark {
@@ -116,17 +91,19 @@
   border: #737373;
 }
 
-@media(min-width: 767px) {
+@media(min-width: 768px) {
   .hero{
     height: 65vh;
+    background-position: center;
   }
 
   .menu svg {
     display: none; 
   }
+  
 }
 
-@media(max-width: 766px) {
+@media(max-width: 767px) {
   .menu ul {
     display: none; 
   }

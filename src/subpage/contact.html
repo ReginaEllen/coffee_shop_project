@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustica - Kontakt</title>
+    <link rel="stylesheet" href="../css/components/navigation.css">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/components/contact.css">
+    <link rel="stylesheet" href="../css/components/map.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Oregano" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Permanent+Marker&family=Quattrocento&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    {{> navigation}}  
+    
+    <main class="contact">
+
+        <div>
+            <h2>Du hast Fragen?</h2>
+            <h2>Schreib' uns gern!</h2>
+        </div>
+
+        <form action="https://formspree.io/f/xkndrvdv" method="post">
+
+            <label for="name">Name*</label><br>
+            <input type="text" id="name" name="name" placeholder="Name" autocomplete="name"><br><br>
+
+            <label for="email">E-Mail*</label><br>
+            <input type="email" id="email" name="email" placeholder="E-Mail" autocomplete="email"><br><br>
+
+            <label for="tel">Telefonnummer</label><br>
+            <input type="tel" id="tel" name="tel" placeholder="Telefonnummer" autocomplete="tel"><br><br>
+
+            <div class="select-container">
+                <select class="select-box" id="dropdown">
+                    <option id="select_label" value="">Dein Betreff:</option>
+                    <option value="delivery">Fragen zur Lieferung</option>
+                    <option value="product">Fragen zum Produkt</option>
+                    <option value="sale">Vertriebsfragen</option>
+                    <option value="others">Einfach nur so...</option>
+                </select>
+
+                <img class="custom-arrow" id="custom-arrow-up" src="../images/Button hell_1.png" alt="dropdown-button">
+                <img class="custom-arrow" id="custom-arrow-down" src="../images/Button hell.png" alt="dropdown-button">
+                
+            </div><br><br>
+
+            <label for="message">Deine Nachricht</label><br>
+
+            <textarea placeholder="Was hast du auf dem Herzen?" id="message" name="message"></textarea><br><br>
+
+            <div id="checkbox">
+                <input type="checkbox" id="data" name="data" value="data" required>
+                <label id="data-label" for="data">Ich akzeptiere die Datenschutzerklärung</label><br>
+            </div>
+
+            <input class="button-dark" type="submit" value="abschicken">
+
+        </form>
+
+    </main>
+
+    {{> footer}}
+
+   <script src="../js/index.js" type="module"></script> 
+   <script src="../js/select.js" type="module"></script> 
+
+</body>
+</html>
