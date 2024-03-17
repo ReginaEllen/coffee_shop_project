@@ -65,6 +65,7 @@
 }
 
 .product-features {
+    width: 100%;
     color: black;
     margin: 10px 0 5px 0;
 }
@@ -99,10 +100,11 @@ select {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
+    width: 90%;
 }
 
 .product-description h3 {
-    margin: 100px 5% 20px 5%; 
+    margin: 100px 0 20px 0; 
 }
 
 .coffee {
@@ -150,5 +152,43 @@ select {
         background-color: #1a1a1a;
         ;
     }
+    .coffee-details {
+        display: flex; 
+    }
+
+    .coffee {
+        color: #FFF;
+        width: 40%;
+        height: auto;
+        margin: 5px;
+        padding-bottom: 20px; 
+    }
+
+    .desktop {
+        width: 50%; 
+        margin: 60px 5% 10px 5%;
+    }
+
+    .select-container {
+        width: 90%;
+        margin: 5%; 
+        padding: 0;
+    }
+
+    .select-box {
+        width: 300px; 
+        padding-right: 70px;
+    }
+
+    .product-description {
+        width: 50%;
+    }
+
+    .product-form {
+        width: 100%;
+        margin: 0;
+    }
+
+    
 
 }

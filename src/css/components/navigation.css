@@ -2,17 +2,22 @@
     width: 98%;
     height: 55px;
     display: flex; 
-    flex-direction: row;
+    /*flex-direction: row;*/
     justify-content: space-between;
     position: fixed; 
     top: 0; 
-    left: 2%;
+    left: 1%;
   }
   
   .hero-nav svg {
     width: 35px;
     height: 35px;
-    margin: 10px; 
+    
+  }
+
+  .hero-nav img {
+    width: 35px; 
+    height: 35px; 
   }
   
   .menu ul {
@@ -29,7 +34,8 @@
   
   .menu li a {
     color: #FFF; 
-    text-decoration: none;
+    /*text-decoration: none;*/
+    vertical-align: middle;
   }
   
   .menu li a:hover {
