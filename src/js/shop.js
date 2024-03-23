@@ -6,20 +6,22 @@ const buildProductHtml = async () => {
   
   return productData.map(
     (product) => `
-    <div class="products">
       <a href="product.html?id=${product.id}" class="product">
         <div class="product-box">
-        <img src="${productImgPath}" alt="product image">
+          <img src="${productImgPath}" alt="product image">
         </div>
-        <div class="infos">
-        <p>${product.productName}</p>
-        <p class="price">${product.price/100}€</p>
-        <img id="beans" src="../images/Icon Kaffee Bohnen.svg" alt="Icon Kaffeebohnen">
-        <img id="press" src="../images/Icon French Press.svg" alt="Icon French Press">
-        <img id="scoop" src="../images/Icon Kaffee Schaufel.svg" alt="Icon Kaffeeschaufel">
+        <div class="product-name">
+        ${product.productName}
+        </div>
+        <div class="product-price">
+          ${product.price / 100}€
+        </div>
+        <div class="product-infos">
+          <img id="beans" src="../images/Icon Kaffee Bohnen.svg" alt="Icon Kaffeebohnen">
+          <img id="press" src="../images/Icon French Press.svg" alt="Icon French Press">
+          <img id="scoop" src="../images/Icon Kaffee Schaufel.svg" alt="Icon Kaffeeschaufel">
         </div>
       </a>
-    </div>
   `).join("");
 }
 
