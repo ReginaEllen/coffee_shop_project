@@ -1,4 +1,5 @@
 import myFunction, { multiply } from "./myModule";
+import { renderCart } from "./cart";
 
 myFunction();
 
@@ -24,5 +25,17 @@ close_button.addEventListener("click", function() {
 });
 
 
+const openCartButton = document.querySelector(".open-cart-button");
+const closeCartButton = document.querySelector(".close-cart-button");
+const cart = document.querySelector(".cart");
+openCartButton.addEventListener("click", () => {
+  cart.classList.toggle("open");
+});
+
+closeCartButton.addEventListener("click", () => {
+  cart.classList.toggle("open");
+});
+
+renderCart();
 
 

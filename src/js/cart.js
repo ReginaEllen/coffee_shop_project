@@ -95,12 +95,12 @@ export const renderCart = async () => {
     </a>
     `;
   }).join("");
-
   const total = (subTotal + 500) / 100;
-
+  
   const cartContainer = document.querySelector(".cart-content");
   const subTotalContainer = document.querySelector(".sub-total");
   const totalContainer = document.querySelector(".total");
+  console.log(cartContainer)
   cartContainer.innerHTML = cartHtml;
 
   const deleteFromCartButton = document.querySelector(
@@ -114,3 +114,56 @@ export const renderCart = async () => {
 };
 
 export default addToCart;
+
+/*const saveCart = (cart) => localStorage.setItem("cart", JSON.stringify(cart));
+
+export const addToCart = (event) => {
+  const productId = parseInt(event.target.dataset.id, 10);
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  
+  const productIndex = cart.findIndex(product => product.productId === productId);
+
+  if (productIndex > -1) {
+    // Product exists, increment amount
+    cart[productIndex].amount += 1;
+  } else {
+    // New product, add to cart
+    cart.push({ productId, amount: 1 });
+  }
+
+  saveCart(cart);
+};
+
+export const renderCart = async () => {
+  const existingCart = loadCart();
+  const productData = await fetchProducts();
+  let subTotal = 0;
+
+  const cartHtml = existingCart.map((cartItem) => {
+    const currentProduct = productData.find((product) => product.id === cartItem.productId);
+    subTotal = subTotal + currentProduct.price * cartItem.amount;
+    return `
+      <a href="/product/index.html?id=${currentProduct.id}" class="product">
+      <img src="${productImgPath}" alt="product image">
+      <div class="product-name">
+        ${currentProduct.productName}
+      </div>
+      <div>Amount: ${cartItem.amount}</div>
+      <div class="product-price">
+        ${cartItem.amount} x ${currentProduct.price / 100}€ = ${currentProduct.price / 100 * cartItem.amount}€
+      </div>
+      <button class="delete-from-cart-button" data-id="${currentProduct.id}">Delete from Cart</button>
+    </a>
+    `;
+  }).join("");
+};
+
+//const total = (subTotal + 500) / 100;
+  
+  const cartContainer = document.querySelector(".cart-content");
+ // const subTotalContainer = document.querySelector(".sub-total");
+ // const totalContainer = document.querySelector(".total");
+ // console.log(cartContainer)
+  cartContainer.innerHTML = cartHtml;
+
+export default addToCart;*/

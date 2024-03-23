@@ -1,6 +1,7 @@
 import productImgPath from "../images/FEND_Coffee_Costa-Rica 1.png";
 import { fetchProducts } from "./productHelpers";
 
+
 const buildProductHtml = async () => {
   const productData = await fetchProducts();
   
